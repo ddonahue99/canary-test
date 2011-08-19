@@ -2,13 +2,6 @@
 # for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
 require File.expand_path('../config/application', __FILE__)
-
-module ::CanaryTest  
-  class Application
-    include Rake::DSL
-  end
-end
-
 require 'rake'
 
 CanaryTest::Application.load_tasks

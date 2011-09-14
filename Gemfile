@@ -2,6 +2,11 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.9'
 
+group :test, :development do
+  gem 'sqlite3'
+  gem 'tddium-preview'
+end
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
